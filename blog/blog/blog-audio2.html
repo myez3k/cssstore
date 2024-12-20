@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="images/favicon.png">
+	<title>Breek - News & Magazine Mobile Template</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/loaders.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+	
+	
+	
+	
+	
+	
+	  
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+*{
+  /* I know I could write "margin: 0; padding: 0;". But that's not performant. */
+  font-family: 'Open Sans';
+  line-height: 170%;
+  color: #444;
+}
+body, p, h1, h2{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  margin-top: 20px;
+}
+mark {
+  background-color: white;
+  padding: 0px 3px;
+} 
+
+.wrapper{
+  padding: 100px;
+  margin: 0 0 50px 0;
+  text-align: left;
+  height: 40vh;
+  background: url('https://source.unsplash.com/KqVHRmHVwwM/1600x900') no-repeat center center fixed;
+  background-size: cover;
+  transition: all 0.4s ease;
+}
+.articleText{
+  margin: 0 10% 30px 20%; 
+  width: 60%;
+  max-width: 800px;
+  padding-left: 30px;
+  border-left: 1px solid #cccccc;
+  transition: all 0.4s ease;
+}
+.introduction{
+  margin-bottom: 20px;
+}
+.accountInfo{
+  transition: all ease 0.5s;
+  display: none;
+  height: 420px;
+  width: 250px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.accountInfo .header{
+  background: url('https://source.unsplash.com/V6s1cmE39XM/250x250') no-repeat;
+  height: 120px;
+  width: 100%;
+  padding: 20px 10px;
+}
+.accountInfo .profilePicture{
+  z-index: 1;
+  margin: -25px auto 10px auto;
+  background: url('https://source.unsplash.com/LyeduBb2Auk/100x100') no-repeat;
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+}
+.accountInfo .profileText{
+  text-align: center;
+  margin-bottom: 20px;
+}
+button{
+  font-size: 16px;
+  width: 100%;
+  background: white;
+  border: 0;
+  padding: 12px 0px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: inset 400px 0 0 0 #444;
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    /* For tablets: */
+  .articleText {
+    margin: 0 10% 30px 10%; 
+    width: 80%;
+    max-width: 800px;
+    padding-left: 0px;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  .articleText {
+    margin: 0 5% 30px 5%; 
+    width: 90%;
+  }
+  .wrapper{
+    padding: 5%;
+  }
+}
+  
+  </style>
+  
+  
+  <!-- HTML !
+<button class="button-5" role="button">Button 5</button>
+-->
+
+
+  <style>
+
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+</style>
+
+
+
+
+<style type="text/css"> 
+
+
+
+        iframe { 
+
+            margin: 0px; 
+
+            padding: 0px; 
+
+            height: 100%; 
+
+            border: none; 
+
+        } 
+
+          
+
+        iframe { 
+
+            display: block; 
+
+            width: 100%; 
+
+            border: none; 
+
+            overflow-y: auto; 
+
+            overflow-x: hidden; 
+
+        } 
+
+    </style> 
+
+
+
+
+<style>
+.alert {
+  width: 512px;
+  padding: 16px;
+  margin: 8px;
+  max-width: 90%;
+}
+
+.alert-1-warning {
+  background-color: rgba(255, 186, 0, 0.05);
+}
+.alert-1-warning .alert-title {
+  color: #ffba00;
+}
+
+</style>
+
+
+<!-- form data below -->
+
+<style> 
+  
+  /*   input[type=submit],   
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  
+  
+}*/
+/*   input[type=submit],   */
+input[type=button], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+input[type=submit] {
+  background-color: #ff9999;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 80%;
+  
+/* Tip: use width: 100% for full-width buttons */
+}
+
+
+
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+  background-color: lightblue;
+}
+
+
+	
+	/* Tip: use for mailchimp form
+*/
+
+/* Tip: use for mailchimp form HIDE FOR NOW
+
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+*/
+	</style>
+
+
+	
+	
+<!-- Google AdSense(script) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2737136387439276"
+     crossorigin="anonymous"></script>
+<!-- Google AdSense(script) -->
+	
+
+</head>
+<body>
+
+	<!-- preloader -->
+	<div class="preloader">
+		<div class="spinner"></div>
+	</div>
+	<!-- end preloader -->
+	
+	<!-- navbar -->
+	<div class="navbar">
+		<div class="container">
+			<div class="row">
+				<div class="col s3">
+					<div class="content-left">
+						<a href="#slide-out" data-activates="slide-out" class="sidebar"><i class="fa fa-bars"></i></a>
+					</div>
+				</div>
+				<div class="col s6">
+					<div class="content-center">
+						<a href="index.html"><h1><span>Be</span>You<span>Be</span>Real<span>.org</span></h1></a>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="content-right">
+						<a href="#slide-out-right" data-activates="slide-out-right" class="sidebar-search"><i class="fa fa-search"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end navbar -->
+
+	<!-- sidebar -->
+	<div class="sidebar-panel">
+		<ul id="slide-out" class="collapsible side-nav">
+			<li class="list-top">
+	         	<div class="collapsible-header">
+	         		Home<span><i class="fa fa-angle-right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	                <li><a href="index.html">Home</a></li>
+	                <li><a href="index2.html">Home Grid</a></li>
+	                <li><a href="index3.html">Home Blog</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Single Post<span><i class="fa fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	                <li><a href="single-post.html">Single Post</a></li>
+	                <li><a href="single-post-gallery.html">Single Post Gallery</a></li>
+	                <li><a href="single-post-video.html">Single Post Video</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Pages<span><i class="fa fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	              	<li><a href="search-result.html">Search Result</a></li>
+	              	<li><a href="author-page.html">Author Page</a></li>
+	              	<li><a href="about.html">About</a></li>
+	              	<li><a href="contact.html">Contact</a></li>
+	                <li><a href="gallery.html">Gallery</a></li>
+	                <li><a href="pricing-table.html">Pricing Table</a></li>
+	                <li><a href="page-not-found.html">Page Not Found</a></li>
+	                <li><a href="settings.html">Settings</a></li>
+	                <li><a href="sign-up.html">Sign Up</a></li>
+	                <li><a href="sign-in.html">Sign In</a></li>
+	                <li><a href="team.html">Team</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Components<span><i class="fa fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	              	<li><a href="accordion.html">Accordion</a></li>
+	              	<li><a href="button.html">Button</a></li>
+	              	<li><a href="calendar.html">Calendar</a></li>
+	              	<li><a href="card.html">Card</a></li>
+	                <li><a href="collapse.html">Collapse</a></li>
+	                <li><a href="list.html">List</a></li>
+	                <li><a href="pagination.html">Pagination</a></li>
+	                <li><a href="table.html">Table</a></li>
+	                <li><a href="tabs.html">Tabs</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="sign-in.html">Sign In</a></li>
+			<li><a href="sign-up.html">Sign Up</a></li>
+			<li><a href="index.html">Log Out</a></li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+	
+	<!-- sidebar -->
+	<div class="sidebar-panel sidebar-search">
+		<ul id="slide-out-right" class="collapsible side-nav">
+			<li>
+				<div class="form">
+					<input type="search"><button class="button"><i class="fa fa-search"></i></button>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li><h5>Popular Search</h5></li>
+			<li><a href="">Football</a></li>
+			<li><a href="">Festival</a></li>
+			<li><a href="">Crime</a></li>
+			<li><a href="">People</a></li>
+			<li><a href="">Food</a></li>
+			<li><a href="">Sport</a></li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+
+	<!-- about -->
+	<div class="segments-page">
+		<div class="container">
+			<div class="about">
+				<div class="pages-title">
+					<h3>About</h3>
+				</div>
+				<div class="content">
+					<img src="images/about.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia minus rerum ullam iure ab, sequi, explicabo delectus est, nostrum eaque deserunt nisi tempore fugiat repellendus! Laboriosam cumque maiores dicta.</p>
+					
+					
+					
+					
+					
+					
+					
+						<!-- preloader -->
+	<div class="preloader">
+		<div class="spinner"></div>
+	</div>
+	<!-- end preloader -->
+	
+	<!-- navbar -->
+	<div class="navbar">
+		<div class="container">
+			<div class="row">
+				<div class="col s3">
+					<div class="content-left">
+						<a href="#slide-out" data-activates="slide-out" class="sidebar"><i class="fa fa-bars"></i></a>
+					</div>
+				</div>
+				<div class="col s6">
+					<div class="content-center">
+						<a href="index.html"><h1><span>B</span>reek</h1></a>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="content-right">
+						<a href="#slide-out-right" data-activates="slide-out-right" class="sidebar-search"><i class="fa fa-search"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end navbar -->
+
+	<!-- sidebar -->
+	<div class="sidebar-panel">
+		<ul id="slide-out" class="collapsible side-nav">
+			<li class="list-top">
+	         	<div class="collapsible-header">
+	         		Home<span><i class="fa fa-angle-right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	                <li><a href="index.html">Home</a></li>
+	                <li><a href="index2.html">Home Grid</a></li>
+	                <li><a href="index3.html">Home Blog</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Single Post<span><i class="fa fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	                <li><a href="single-post.html">Single Post</a></li>
+	                <li><a href="single-post-gallery.html">Single Post Gallery</a></li>
+	                <li><a href="single-post-video.html">Single Post Video</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Pages<span><i class="fa fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	              	<li><a href="search-result.html">Search Result</a></li>
+	              	<li><a href="author-page.html">Author Page</a></li>
+	              	<li><a href="about.html">About</a></li>
+	              	<li><a href="contact.html">Contact</a></li>
+	                <li><a href="gallery.html">Gallery</a></li>
+	                <li><a href="pricing-table.html">Pricing Table</a></li>
+	                <li><a href="page-not-found.html">Page Not Found</a></li>
+	                <li><a href="settings.html">Settings</a></li>
+	                <li><a href="sign-up.html">Sign Up</a></li>
+	                <li><a href="sign-in.html">Sign In</a></li>
+	                <li><a href="team.html">Team</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Components<span><i class="fa fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	              	<li><a href="accordion.html">Accordion</a></li>
+	              	<li><a href="button.html">Button</a></li>
+	              	<li><a href="calendar.html">Calendar</a></li>
+	              	<li><a href="card.html">Card</a></li>
+	                <li><a href="collapse.html">Collapse</a></li>
+	                <li><a href="list.html">List</a></li>
+	                <li><a href="pagination.html">Pagination</a></li>
+	                <li><a href="table.html">Table</a></li>
+	                <li><a href="tabs.html">Tabs</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="sign-in.html">Sign In</a></li>
+			<li><a href="sign-up.html">Sign Up</a></li>
+			<li><a href="index.html">Log Out</a></li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+	
+	<!-- sidebar -->
+	<div class="sidebar-panel sidebar-search">
+		<ul id="slide-out-right" class="collapsible side-nav">
+			<li>
+				<div class="form">
+					<input type="search"><button class="button"><i class="fa fa-search"></i></button>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li><h5>Popular Search</h5></li>
+			<li><a href="">Football</a></li>
+			<li><a href="">Festival</a></li>
+			<li><a href="">Crime</a></li>
+			<li><a href="">People</a></li>
+			<li><a href="">Food</a></li>
+			<li><a href="">Sport</a></li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+
+	<!-- sign up -->
+	<div class="sign-up segments-page">
+		<div class="container"><!-- custom sign up blog-audio -->
+
+<div class="article">
+  <div class="wrapper">
+    <div class="wrapperText">
+      <h1>
+        <mark>Tattooed helvetica celiac leggings waistcoat vegan retro selfies</mark>
+      </h1>
+      <p id="author">
+        <mark>by Lina Regental</mark>
+      </p>
+      <div id="accountDetail" class="accountInfo">
+        <div class="header">
+          <h2><mark>Lina Regental</mark></h2>
+          <p><mark>Producer & Author</mark></p>
+		  
+		  
+		  
+        </div>
+        <div class="profilePicture"></div>
+        <p class="profileText">Chef, Community Volunteer, Conveyor of Messages, Electro Producer, Scapegoat. Is that a double rainbow? D:.</p>
+        <button>Check me out ></button>
+      </div>
+    </div>
+  </div>
+  <!--The Text is generated with hipsum.co :) Check it out! -->
+    <div class="articleText">
+	
+	
+	
+      <h4 class="introduction">Three wolf moon post-ironic bespoke lomo tattooed kinfolk. Retro typewriter gluten-free hashtag cold-pressed. Beard cliche echo park banh mi. Tattooed helvetica celiac, leggings waistcoat vegan retro selfies art party distillery mustache echo park.</h4>
+      <p>Beard cliche echo park banh mi. Salvia tousled sustainable fap, poutine direct trade scenester. Vinyl gastropub put a bird on it, skateboard YOLO ethical flannel flexitarian kale chips. 3 wolf moon post-ironic bespoke lomo tattooed kinfolk. Retro typewriter gluten-free hashtag cold-pressed. Meh paleo aesthetic, chia mlkshk etsy pickled ethical. Tattooed helvetica celiac, leggings waistcoat vegan retro selfies art party distillery mustache echo park.</p>
+      
+	    <p style="text-align:center;border:1px solid black; padding: 8px; font-size: 14px;">
+<b>Hey there!</b><em> Some links on this page are affiliate links which means that, if you choose to make a purchase, I may earn a small commission at no extra cost to you. I greatly appreciate your support!</em>
+  </p>
+	  
+	  <h2>Kale chips</h2>
+      <p>Occupy gluten-free umami wayfarers, post-ironic normcore semiotics listicle deep v health goth cold-pressed. Raw denim williamsburg synth normcore actually. Health goth post-ironic whatever, flannel mlkshk tacos thundercats seitan put a bird on it try-hard migas small batch. Occupy small batch intelligentsia, food truck gochujang viral iPhone letterpress chicharrones etsy flannel. Banjo +1 slow-carb venmo hashtag health goth. Tumblr DIY occupy try-hard. Quinoa scenester disrupt brooklyn mixtape, banh mi hoodie beard messenger bag locavore kale chips.</p>
+      <p>Pop-up echo park semiotics williamsburg, next level literally retro neutra. Microdosing twee lo-fi squid actually art party, intelligentsia sartorial try-hard tote bag irony. Cliche mlkshk freegan, truffaut master cleanse bushwick offal distillery chicharrones man bun occupy thundercats vice pork belly yr. Small batch mixtape helvetica +1. Godard ethical tote bag 8-bit fixie, raw denim pitchfork. Fap venmo four loko lo-fi chicharrones, small batch umami retro intelligentsia irony pug man braid flannel migas. Gentrify taxidermy bicycle rights sustainable, chia tattooed meggings chicharrones literally actually gochujang fanny pack.</p>
+      
+	  
+	  <!-- audio !-->
+	  
+	  <!-- partial:index.partial.html -->
+                  <center>
+<audio controls>
+  <source src="./backsound.mp3"  type="audio/mp3">
+</audio> 
+                      </center>
+	  
+	  
+	  <!-- audio !-->
+	  
+	  
+	  
+	  <h2>Helvetica cray</h2>
+      <p>Locavore YOLO asymmetrical polaroid, aesthetic bitters mumblecore gochujang master cleanse cray helvetica kogi. Put a bird on it helvetica food truck pop-up etsy, echo park forage organic readymade trust fund. Post-ironic try-hard echo park, selfies wolf selvage synth squid single-origin coffee raw denim tacos twee hella. Art party meggings pug shoreditch waistcoat. Post-ironic hammock quinoa, pickled pop-up cardigan cred put a bird on it banh mi green juice cliche paleo. 90's cray fingerstache, irony chia slow-carb butcher deep v direct trade YOLO. Helvetica cray vegan freegan four loko put a bird on it, gentrify etsy locavore wayfarers pickled aesthetic tousled.</p>
+  
+  <!-- HTML !-->
+  
+   <!-- Hide until subscribe is built 
+   <p style="text-align:center;border:1px solid black; padding: 8px; font-size: 14px;">
+<b>Hey there!</b><em> Some links on this page are affiliate links which means that, if you choose to make a purchase, I may earn a small commission at no extra cost to you. I greatly appreciate your support!</em>
+</p>  !-->
+  
+  
+  <p style="text-align:center;">
+<button class="button-5" role="button">
+<a href="http://eepurl.com/ijuGkv&utm_camp=row1" style="text-decoration:none" target="_blank">
+View On Amazon
+</a>
+
+</button>
+</p>
+
+
+<br>
+
+
+
+
+
+  <!-- iframe insert -->
+  <!--
+  <iframe src="promop.html"
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0" 
+            width="100%" 
+            height="100%" 
+            scrolling="no">  <!-- scrolling="auto" -->
+			 <!--
+  </iframe> -->
+  
+  <!-- iframe insert -->
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+//$('#author').hover(
+//  function() {
+//      var accountDetail = $('#accountDetail');
+//      accountDetail.fadeIn();
+//      accountDetail.css('position', "absolute");
+//      accountDetail.css('top', $(this).position.top);
+//      accountDetail.css('left', $(this).position.left)
+//  }
+//);
+//$(document).mouseup(function (e)
+//{
+//    var accountDetail = $('#accountDetail');
+//
+//    if (!accountDetail.is(e.target) && accountDetail.has(e.target).length === 0)
+//    {
+//        accountDetail.fadeOut();
+//    }
+//});
+
+</script>
+
+
+
+					
+					
+					
+					
+					
+	
+<footer>
+
+
+<center></center>
+<div class="alert alert-1-warning">
+      <h3 class="alert-title">Share:</h3>
+      <p class="alert-content">
+	  
+	
+	 <p style="text-align:center;font-size:14px;" class="no-access"> 
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<!-- <a class="a2a_dd" href="https://www.addtoany.com/share"></a> -->
+<a class="a2a_button_amazon_wish_list"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_pinterest"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_print"></a>
+<a class="a2a_button_sms"></a>
+<a class="a2a_button_email"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+	  </p>
+	  
+	  
+	
+	
+	<!-- Begin Mailchimp Signup Form -->  <hr>
+
+  <div class="center">
+  <h4 style="text-align:center;">JOIN THE BEYOUBEREAL LIST</h4>
+  <p style="text-align:center;">New products and alot more..</p>
+
+   <!--   <h1>mc_embed_signup form 2</h1> -->
+  <div id="mc_embed_signup"> 
+
+   <!--   <h1>The input required attribute form 2</h1> -->
+  
+  <form style="text-align:center;" action="https://imailchecks.us21.list-manage.com/subscribe/post?u=094b289e58db37e875e4fe6b7&amp;id=78c36fa262&amp;f_id=0059d7e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self"> 
+        <div id="mc_embed_signup_scroll">
+  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> 
+  
+
+ <div > <!--  div class="mc-field-group" -->
+<label for="mce-EMAIL"><span class="asterisk"></span> <!--  indicates required* Username: --> 
+</label> 
+  <input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="your@email*com" required> 
+<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span> 
+</div> <!--   input type="email" -->
+  
+  <div id="mce-responses" class="clear foot"> 
+<div class="response" id="mce-error-response" style="display:none"></div> <!--  style="display:none" --> 
+<div class="response" id="mce-success-response" style="display:none"></div> <!--  style="display:none" -->
+
+</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> 
+
+	<!-- --> 
+	    <div  div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_094b289e58db37e875e4fe6b7_78c36fa262" tabindex="-1" value=""></div> 
+
+
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit"> 
+				<!--   class="button" -->
+				
+				  <!--   disclaimer -->
+    <p style="text-align:center;font-size:8px;"> We Dont Spam </p>
+	
+
+   
+    </div> 
+</form> 
+</div>
+</div>
+	
+  
+  <!-- enter this -->
+  <!-- end Mailchimp Signup Form --> 
+<!--End mc_embed_signup-->
+	  
+	  
+	  
+	  
+	  </p>
+    </div>
+
+	<!-- center this -->
+
+
+  <div class="bio-column2" style="background-color:#fff;">
+    <p style="font-size:14px;"><strong>Meet the author:</strong> 
+	This post contains affiliate links.  The Amazon Associate Program was the very first tool I used to monetize my blog....
+	<a href="http://eepurl.com/ijuGkv" title="" style="text-decoration:none">Learn More</a>
+	</p>
+	
+	<!--   disclaimer --><!--  hide  --><!--  added        -->
+	
+<p style="text-align:center;font-size:14px;" class="no-access">
+<a href="mailto:email@example.com&subject=Mail from our Website&body=Some body text here,http://eepurl.com/ijuGkv" title="" style="text-decoration:none"> &#128386; </a></p>
+
+<!--  dele this 
+<a href="http://eepurl.com/ijuGkv" title="" style="text-decoration:none"> Privacy </a> 
+
+<p style="text-align:center;>
+<a href="mailto:email@example.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here" style="text-decoration:none;font-size: 14px;" target="_blank"> &#128386; </a>
+</p>
+-->
+
+	<br>
+	
+	
+		<!--   disclaimer --><!--  hide  --><!--  added        -->
+<p style="text-align:center;font-size:14px;" class="no-access">
+<a href="http://eepurl.com/ijuGkv" title="" style="text-decoration:none"> About Us </a>
+|
+ <a href="http://eepurl.com/ijuGkv" title="" style="text-decoration:none"> Disclaimer </a>
+ |
+<a href="http://eepurl.com/ijuGkv" title="" style="text-decoration:none"> Term Condition </a>
+|
+<a href="http://eepurl.com/ijuGkv" title="" style="text-decoration:none"> Privacy Policy </a>
+|
+ <a href="http://eepurl.com/ijuGkv" title="" style="text-decoration:none"> Contact Us </a>
+ 
+ </p>
+
+	<br>
+	
+	
+	
+	<p> Copyright © 2023 SNAP! Creativity · Design by: Key Lime Digital Designs· Darling Theme </p>
+  </div>
+</footer><br><br>
+
+
+
+<!-- end right here -->
+  </div>
+</div>
+
+
+ <!-- end sign up -->
+ 				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- edit below footer -->
+					
+					<div class="social-link">
+						<a href=""><i class="fa fa-facebook"></i></a>
+						<a href=""><i class="fa fa-twitter"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><i class="fa fa-google"></i></a>
+					</div>
+					<p>Address: New York United States 090</p>
+					<p>Email: contact@yourstore.com</p>
+					<p>Phone: +19993394</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end about -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

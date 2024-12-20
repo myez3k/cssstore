@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="../images/favicon.ico">
+	<title>BeYouBeReal.org - Lifestyle &#038; Hobbie Blog</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="../css/materialize.css">
+	<link rel="stylesheet" href="../css/loaders.css">
+	<link rel="stylesheet" href="../css/lightbox.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style1m.css">
+	
+	
+	<style>
+  @import url("https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap");
+html {
+	background: linear-gradient(
+			to bottom right,
+			transparent 48%,
+			#efefef 48%,
+			#efefef 52%,
+			transparent 52%
+		),
+		linear-gradient(
+			to bottom left,
+			transparent 48%,
+			#efefef 48%,
+			#efefef 52%,
+			transparent 52%
+		);
+	background-size: 0.25rem 0.25rem;
+}
+body {
+	width: 100%;
+	max-width: 700px;
+	font-family: sans-serif;
+	padding-bottom: 1vw;
+	margin: 0 auto;
+	box-shadow: 0 0 300px black;
+}
+
+h1 {
+	column-span: all;
+	background: black;
+	color: white;
+	font-size: 10vw;
+	margin: 0;
+	padding-left: 1rem;
+}
+
+.article-meta {
+	column-span: all;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+}
+.article-meta * {
+	display: inline-block;
+	vertical-align: middle;
+}
+.article-meta svg {
+	float: right;
+	margin-top: -3rem;
+	filter: saturate(0) contrast(5);
+	border-radius: 50%;
+	border: 0.5rem solid black;
+	box-shadow: inset 0 0 0 2px black;
+	box-sizing: border-box;
+	transition: 0.75s;
+}
+.article-meta svg:hover {
+	filter: saturate(1) contrast(1);
+}
+.article-meta p {
+	margin: 0.25rem 0;
+}
+.article-meta span {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+h2 {
+	background: black;
+	color: white;
+	font-size: 2rem;
+	column-span: all;
+	padding: 1rem;
+	width: fit-content;
+	max-width: 75%;
+}
+
+figure {
+	width: max(50%, 350px);
+	float: right;
+	padding: 0 1rem;
+	margin: 0;
+}
+img {
+	width: 100%;
+	filter: grayscale(1) contrast(0.75);
+	transition: 0.75s;
+}
+img:hover {
+	filter: grayscale(0) contrast(1);
+}
+figcaption {
+	font-size: 0.75rem;
+}
+
+p {
+	line-height: 1.5rem;
+	padding: 0 1.5rem;
+	font-family: "Noticia Text", serif;
+}
+  </style>
+  
+	
+	
+<!-- Google AdSense(script) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2737136387439276"
+     crossorigin="anonymous"></script>
+<!-- Google AdSense(script) -->
+	
+	
+</head>
+<body>
+
+	<!-- preloader -->
+	<div class="preloader">
+		<div class="spinner"></div>
+	</div>
+	<!-- end preloader -->
+	
+	<!-- navbar -->
+	<div class="navbar">
+		<div class="container">
+			<div class="row">
+				<div class="col s3">
+					<div class="content-left">
+						<a href="#slide-out" data-activates="slide-out" class="sidebar"><i class="fa fa-bars"></i></a>
+					</div>
+				</div>
+				<div class="col s6">
+					<div class="content-center">
+						<a href="index.html"><h1><span>Be</span>You<span>Be</span>Real<span>.org</span></h1></a>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="content-right">
+						<a href="#slide-out-right" data-activates="slide-out-right" class="sidebar-search"><i class="fa fa-search"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end navbar -->
+
+	<!-- sidebar -->
+	<div class="sidebar-panel">
+		<ul id="slide-out" class="collapsible side-nav">
+			<li class="list-top">
+	         	<div class="collapsible-header">
+	         		Home<span><i class="fa fa-angle-right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	                <li><a href="index.html">Home</a></li>
+	                <li><a href="index2.html">Home Grid</a></li>
+	                <li><a href="index3.html">Home Blog</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Single Post<span><i class="fa fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	                <li><a href="single-post.html">Blog2</a></li>
+	                <li><a href="single-post-gallery.html">Single Post Gallery</a></li>
+	                <li><a href="single-post-video.html">Single Post Video</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Shop<span><i class="fa fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	              	<li><a href="search-result.html">Search Result</a></li>
+	              	<li><a href="author-page.html">Author Page</a></li>
+					<!--
+	              	<li><a href="about.html">About</a></li>
+	              	<li><a href="contact.html">Contact</a></li>
+	                <li><a href="gallery.html">Gallery</a></li>
+	                <li><a href="pricing-table.html">Pricing Table</a></li>
+	                <li><a href="page-not-found.html">Page Not Found</a></li>
+	                <li><a href="settings.html">Settings</a></li>
+	                <li><a href="sign-up.html">Sign Up</a></li>
+	                <li><a href="sign-in.html">Sign In</a></li>
+	                <li><a href="team.html">Team</a></li>
+					-->
+	              </ul>
+	            </div>
+			</li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Blog<span><i class="fa fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	              	<li><a href="accordion.html">Accordion</a></li>
+	              	<li><a href="button.html">Button</a></li>
+					<!--
+	              	<li><a href="calendar.html">Calendar</a></li>
+	              	<li><a href="card.html">Card</a></li>
+	                <li><a href="collapse.html">Collapse</a></li>
+	                <li><a href="list.html">List</a></li>
+	                <li><a href="pagination.html">Pagination</a></li>
+	                <li><a href="table.html">Table</a></li>
+	                <li><a href="tabs.html">Tabs</a></li>
+					-->
+	              </ul>
+	            </div>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="sign-in.html">Search</a></li>
+			<li><a href="sign-up.html">Profile</a></li>
+			<li><a href="index.html">List</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="sign-in.html">Shows</a></li>
+			<li><a href="sign-up.html">Sign Up</a></li>
+			<!--<li><a href="index.html">Text Met</a></li>-->
+			
+						<li>
+	         	<div class="collapsible-header">
+	         		Support<span><i class="fa fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	              	<li><a href="accordion.html">Ways to Give</a></li>
+	              	<li><a href="button.html">Button</a></li>
+	              </ul>
+	            </div>
+			</li>
+			
+		</ul>
+	</div>
+	<!-- end sidebar -->
+	
+	<!-- sidebar -->
+	<div class="sidebar-panel sidebar-search">
+		<ul id="slide-out-right" class="collapsible side-nav">
+			<li>
+				<div class="form">
+					<input type="search"><button class="button"><i class="fa fa-search"></i></button>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li><h5>Popular Search</h5></li>
+			<li><a href="">Football</a></li>
+			<li><a href="">Festival</a></li>
+			<li><a href="">Crime</a></li>
+			<li><a href="">People</a></li>
+			<li><a href="">Food</a></li>
+			<li><a href="">Sport</a></li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+
+	<!-- author pages -->
+	
+	
+	<div class="segments-page post-grid">
+	<!--
+		<div class="container">-->
+		
+		
+		<!-- hide pages 
+			<div class="author-page">
+				<img src="images/profile.png" alt="">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias expedita, iusto sit sunt temporibus ut nobis, quod eum delectus quasi quas consequatur dolores maiores autem iste iure aperiam placeat totam!</p>
+				<ul>
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-google"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+					<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+					<li><a href=""><i class="fa fa-youtube"></i></a></li>
+					
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<div class="content-image">
+						<img src="images/post1.jpg" alt="">
+						<span>Technology</span>
+						<a href=""><h5>Business success making in a simple and easy wa</h5></a>
+						<p class="date"><i class="fa fa-clock-o"></i>01 January 2018</p>
+					</div>
+				</div>
+				<div class="col s6">
+					<div class="content-image">
+						<img src="images/post2.jpg" alt="">
+						<span>Fashion</span>
+						<a href=""><h5>Interview with marathon winners in the world</h5></a>
+						<p class="date"><i class="fa fa-clock-o"></i>01 January 2018</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<div class="content-image">
+						<img src="images/post3.jpg" alt="">
+						<span>Lifestyle</span>
+						<a href=""><h5>Adults like to eat good fruits and meat, for health</h5></a>
+						<p class="date"><i class="fa fa-clock-o"></i>01 January 2018</p>
+					</div>
+				</div>
+				<div class="col s6">
+					<div class="content-image">
+						<img src="images/post4.jpg" alt="">
+						<span>Sport</span>
+						<a href=""><h5>Congestion occurs up to 5 hours ice water melt</h5></a>
+						<p class="date"><i class="fa fa-clock-o"></i>01 January 2018</p>
+					</div>
+				</div>
+			</div>-->
+			
+			
+			
+			
+			<!-- partial:index.partial.html -->
+<h1 class="headline">Arcade Life</h1>
+<div class="article-meta">
+	<svg id="author-avatar" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+		<title id="avatarTitle">Author Avatar</title>
+		<desc id="avatarDesc">A cartoon avatar of a smiling purple square on a blue background.</desc>
+		<mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+			<rect width="36" height="36" rx="72" fill="white"></rect>
+		</mask>
+		<g mask="url(#mask__beam)">
+			<rect width="36" height="36" fill="#0ebeff"></rect>
+			<rect x="0" y="0" width="36" height="36" transform="translate(6 6) rotate(192 18 18) scale(1)" fill="#754cac" rx="6"></rect>
+			<g transform="translate(0 2) rotate(-2 18 18)">
+				<path d="M13,19 a1,0.75 0 0,0 10,0" fill="white"></path>
+				<rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+				<rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+			</g>
+		</g>
+	</svg>
+	<p class="byline">by Penny Pen</p>
+	<p class="dateline">June 21, 2021</p>
+	<p class="article-tags">
+		<span class="tag">culture</span> <span class="tag">games</span> <span class="tag featured">featured</span>
+	</p>
+</div>
+
+<h2 class="subhead">The next generation of arcade gamers top the leaderboard</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem est minima quam! Laborum odit quidem earum perferendis eius laudantium perspiciatis similique deleniti delectus suscipit, cum corrupti facere reprehenderit esse.</p>
+<p>Animi aut, atque quibusdam similique distinctio enim iure, blanditiis rerum autem illum eum in. Dolorem quasi aspernatur nemo deserunt quo, libero dolore atque magni, ullam nihil corrupti et illo earum?</p>
+<p>Quos, ad? Et, iure. Officia fuga unde quibusdam nemo modi perspiciatis quisquam consectetur voluptates, dolore ab eaque voluptatem corporis placeat consequatur itaque qui asperiores. Consequuntur quas vitae animi est ea!</p>
+<p>Accusantium nemo labore corrupti laudantium! Quo reprehenderit ea perspiciatis temporibus! Illo sapiente harum fuga molestias temporibus iste animi. Velit, tenetur mollitia sit magni nulla quos veniam molestias consectetur aliquam eaque.</p>
+<p>Voluptatem, omnis, placeat recusandae iste explicabo accusantium velit laboriosam voluptatum similique, fugit culpa enim! Suscipit labore odit porro assumenda, molestiae aperiam laboriosam explicabo nemo soluta facere sed libero magnam. Odio.</p>
+
+<aside>
+	<p>Quos, ad? Et, iure. Libero dolore atque magni.</p>
+</aside>
+
+<figure><img src="https://assets.codepen.io/t-1/freddy-g-lhy1lY3CyLI-unsplash.jpg" alt="a smiling person in a pink hoodie, standing in front of a bright pink lighted arcade basketball game. " />
+	<figcaption>Photo by Freddy G</figcaption>
+</figure>
+<!-- full size image: https://images.unsplash.com/flagged/photo-1556339911-7ef846e7db43-->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem est minima quam! Laborum odit quidem earum perferendis eius laudantium perspiciatis similique deleniti delectus suscipit, cum corrupti facere reprehenderit esse. Sed officia ipsum, soluta quibusdam enim quisquam ea atque nulla sunt temporibus, dolorum veniam dolor aspernatur quod. Praesentium vitae exercitationem quod, inventore eius quidem ea sit, nemo reprehenderit voluptatum officia.</p>
+<p>Animi aut, atque quibusdam similique distinctio enim iure, blanditiis rerum autem illum eum in. Dolorem quasi aspernatur nemo deserunt quo, libero dolore atque magni, ullam nihil corrupti et illo earum?</p>
+<p>Voluptatem, omnis, placeat recusandae iste explicabo accusantium velit laboriosam voluptatum similique, fugit culpa enim! Suscipit labore odit porro assumenda, molestiae aperiam laboriosam explicabo nemo soluta facere sed libero magnam. Odio.</p>
+<p>Quae, cumque blanditiis? Nisi rem ullam, ducimus qui praesentium, temporibus mollitia ex voluptatibus aut accusamus reprehenderit soluta eius expedita dicta adipisci debitis repudiandae quibusdam laborum possimus cupiditate quidem doloribus quas.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vitae debitis reiciendis nam molestias, iure, recusandae magnam cupiditate ut dolore aliquam nesciunt ipsum sit illum nihil quibusdam mollitia veritatis maiores.</p>
+
+<h2>High Scores &amp; High Drama</h2>
+
+<p>Voluptatem, omnis, placeat recusandae iste explicabo accusantium velit laboriosam voluptatum similique, fugit culpa enim! Suscipit labore odit porro assumenda, molestiae aperiam laboriosam explicabo nemo soluta facere sed libero magnam. Odio.</p>
+<p>Animi aut, atque quibusdam similique distinctio enim iure, blanditiis rerum autem illum eum in. Dolorem quasi aspernatur nemo deserunt quo, libero dolore atque magni, ullam nihil corrupti et illo earum?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem est minima quam! Laborum odit quidem earum perferendis eius laudantium perspiciatis similique deleniti delectus suscipit, cum corrupti facere reprehenderit esse.</p>
+
+<figure><img src="https://assets.codepen.io/t-1/cassidy-james-blaede-1lzJt360gkE-unsplash.jpg" alt="two people playing Guitar Hero Arcade. " />
+	<figcaption>Photo by Cassidy James Blaede</figcaption>
+</figure>
+<!-- full size image: https://images.unsplash.com/photo-1536818968680-deeec2e9fd11-->
+
+<p>Voluptatem, omnis, placeat recusandae iste explicabo accusantium velit laboriosam voluptatum similique, fugit culpa enim! Suscipit labore odit porro assumenda, molestiae aperiam laboriosam explicabo nemo soluta facere sed libero magnam. Odio.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id amet ad blanditiis vero delectus incidunt tempore reiciendis eius qui vel placeat reprehenderit, ut, dolore asperiores possimus impedit. Ipsum, culpa eaque!</p>
+<p>Velit vero esse quisquam accusantium? Dolore alias, quaerat quod excepturi officiis ipsa placeat officia necessitatibus illo, vero quasi esse aut. Doloremque nesciunt placeat animi saepe tempore aspernatur, officia vitae laudantium!</p>
+
+<h2>Leveling Up</h2>
+<p>Animi aut, atque quibusdam similique distinctio enim iure, blanditiis rerum autem illum eum in. Dolorem quasi aspernatur nemo deserunt quo, libero dolore atque magni, ullam nihil corrupti et illo earum?</p>
+<figure><img src="https://assets.codepen.io/t-1/nick-jones-QTk3Llc-oKU-unsplash.jpg" alt="a person wearing a bucket hat, sitting on a skee ball machine lane. " />
+	<figcaption>Photo by Nick Jones</figcaption>
+</figure>
+
+<!-- full size image: https://images.unsplash.com/photo-1601637155580-ac6c49428450-->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem est minima quam! Laborum odit quidem earum perferendis eius laudantium perspiciatis similique deleniti delectus suscipit, cum corrupti facere reprehenderit esse.</p>
+<p>Voluptatem, omnis, placeat recusandae iste explicabo accusantium velit laboriosam voluptatum similique, fugit culpa enim! Suscipit labore odit porro assumenda, molestiae aperiam laboriosam explicabo nemo soluta facere sed libero magnam. Odio.</p>
+<p>Animi aut, atque quibusdam similique distinctio enim iure, blanditiis rerum autem illum eum in. Dolorem quasi aspernatur nemo deserunt quo, libero dolore atque magni, ullam nihil corrupti et illo earum?</p>
+<p>Voluptatem, omnis, placeat recusandae iste explicabo accusantium velit laboriosam voluptatum similique, fugit culpa enim! Suscipit labore odit porro assumenda, molestiae aperiam laboriosam explicabo nemo soluta facere sed libero magnam. Odio.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id amet ad blanditiis vero delectus incidunt tempore reiciendis eius qui vel placeat reprehenderit, ut, dolore asperiores possimus impedit. Ipsum, culpa eaque!</p>
+
+<figure><img src="https://assets.codepen.io/t-1/ersin-mandaliev-C5DC5bJhpRE-unsplash.jpg" alt="a person in black high-heeled boots sitting on an arcade basketball game. " />
+	<figcaption>Photo by Ersin Mandaliev</figcaption>
+</figure>
+
+<!-- full size image: https://images.unsplash.com/flagged/photo-1556491168-3e6ffa3e26b2-->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem est minima quam! Laborum odit quidem earum perferendis eius laudantium perspiciatis similique deleniti delectus suscipit, cum corrupti facere reprehenderit esse.</p>
+<p>Velit vero esse quisquam accusantium? Dolore alias, quaerat quod excepturi officiis ipsa placeat officia necessitatibus illo, vero quasi esse aut. Doloremque nesciunt placeat animi saepe tempore aspernatur, officia vitae laudantium!</p>
+
+<figure><img src="https://assets.codepen.io/t-1/nick-jones-g7jhzbd9WFQ-unsplash.jpg" alt="a person in a white t-shirt sitting on a wheel of fortune arcade game. " />
+	<figcaption>Photo by Nick Jones</figcaption>
+</figure>
+
+<!-- full size image: https://images.unsplash.com/photo-1604112900927-e4d6d3ce3a2e -->
+
+<p>Asperiores cum quisquam voluptate adipisci nihil ipsa eum libero recusandae inventore facilis modi nulla, provident ut, ad explicabo magnam unde voluptates commodi.</p>
+<p>Consectetur sed, itaque modi fugit asperiores similique maxime voluptatum incidunt labore vero cumque provident, deleniti nam? Molestiae impedit nostrum soluta quo iure, iste, nobis expedita minus ad officia dolor saepe.</p>
+<aside>
+	<p>Labore vero cumque provident, deleniti nam, cumque vero.</p>
+</aside>
+<p>Consectetur sed, itaque modi fugit asperiores similique maxime voluptatum incidunt labore vero cumque provident, deleniti nam? Molestiae impedit nostrum soluta quo iure, iste, nobis expedita minus ad officia dolor saepe.</p>
+<p>Aperiam est ab harum alias quae rem, cumque vero. Dolore possimus quas eius dolor voluptatibus cumque velit, ratione aspernatur voluptatem? Nulla voluptatem quaerat placeat error, ipsam alias dignissimos odit excepturi?</p>
+
+<h2>Game Over?</h2>
+
+<p>Animi aut, atque quibusdam similique distinctio enim iure, blanditiis rerum autem illum eum in. Dolorem quasi aspernatur nemo deserunt quo, libero dolore atque magni, ullam nihil corrupti et illo earum?</p>
+
+<figure><img src="https://assets.codepen.io/t-1/element5-digital-dwcC-OJ-bRs-unsplash.jpg" alt="three neon-lit skee ball lanes. " />
+	<figcaption>Photo by Element5 Digital</figcaption>
+</figure>
+
+<!-- full size image: https://images.unsplash.com/photo-1533236897111-3e94666b2edf -->
+
+<p>Velit vero esse quisquam accusantium? Dolore alias, quaerat quod excepturi officiis ipsa placeat officia necessitatibus illo, vero quasi esse aut. Doloremque nesciunt placeat animi saepe tempore aspernatur, officia vitae laudantium!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem est minima quam! Laborum odit quidem earum perferendis eius laudantium perspiciatis similique deleniti delectus suscipit, cum corrupti facere reprehenderit esse.</p>
+<p>Aperiam est ab harum alias quae rem, cumque vero. Dolore possimus quas eius dolor voluptatibus cumque velit, ratione aspernatur voluptatem? Nulla voluptatem quaerat placeat error, ipsam alias dignissimos odit excepturi?</p>
+<p>Consectetur sed, itaque modi fugit asperiores similique maxime voluptatum incidunt labore vero cumque provident, deleniti nam? Molestiae impedit nostrum soluta quo iure, iste, nobis expedita minus ad officia dolor saepe.</p>
+<aside>
+	<p>Labore vero cumque provident, deleniti nam, cumque vero.</p>
+</aside>
+<p>Consectetur sed, itaque modi fugit asperiores similique maxime voluptatum incidunt labore vero cumque provident, deleniti nam? Molestiae impedit nostrum soluta quo iure, iste, nobis expedita minus ad officia dolor saepe.</p>
+<p>Aperiam est ab harum alias quae rem, cumque vero. Dolore possimus quas eius dolor voluptatibus cumque velit, ratione aspernatur voluptatem? Nulla voluptatem quaerat placeat error, ipsam alias dignissimos odit excepturi?</p>
+<!-- partial -->
+  
+			
+	<!-- -->
+  
+  <center>
+  <table class="Affiliate-product-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Feature</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="Affiliate-image">
+                    <div class="p_tag">TOP Pick </div>  
+                    <a href="https://www.amazon.com/Audio-Technica-ATH-M50x-Professional-Monitor-Headphones/dp/B00HVLUR86?tag=yez3-20?utm_source=Website&utm_medium=Roas&utm_campaign=site_launch&utm_id=Yez3_aff" rel="nofollow" target="_blank">
+                        <img src="https://res-1.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1623749139/bq18ot4ooj4h9g3ciuki.png" class="p-img"></a>
+                    </td>
+                    <td class="Affiliate-product">
+                        <a href="#" rel="nofollow" target="_blank">
+                            <div class="p_title">
+                            Asus ROG Zephyrus G14
+                          </div></a>
+                    </td>
+                    <td class="Affiliate-feature">
+                        It delivers the goods in gaming but also delivers 11 hours of battery life
+                      </td>
+                    <td class="Affiliate-btn">
+                        <a href="https://res-1.cloudinary.com/" rel="nofollow" target="_blank">Buy Now </a>
+                    </td>
+                </tr>
+          
+                <tr>
+                    <td class="Affiliate-image">
+                        <div class="p_tag"> Trending </div>
+                        <a href="https://www.amazon.com/Audio-Technica-ATH-M50x-Professional-Monitor-Headphones/dp/B00HVLUR86?tag=yez3-20?utm_source=Website&utm_medium=Roas&utm_campaign=site_launch&utm_id=Yez3_aff&utm_term=gaming&utm_content=Ready_P1" rel="nofollow" target="_blank">
+                            <img src="https://res-1.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1623749139/bq18ot4ooj4h9g3ciuki.png" class="p-img"></a>
+                        </td>
+                        <td class="Affiliate-product">
+                            <a href="#" rel="nofollow" target="_blank">
+                                <div class="p_title"> Razer Blade 14 
+                              </div> </a>
+                        </td>
+                        <td class="Affiliate-feature">
+                        Razer Blade 14 offers powerful components and excellent performance.
+                      </td>
+                        <td class="Affiliate-btn">
+                            <a href="https://www.amazon.com/Audio-Technica-ATH-M50x-Professional-Monitor-Headphones/dp/B00HVLUR86?tag=yez3-20?utm_source=Website&utm_medium=Roas&utm_campaign=site_launch&utm_id=Yez3_aff&utm_term=gaming&utm_content=Ready_P1" rel="nofollow" target="_blank">Buy Now </a>
+                        </td>
+                    </tr>
+          
+          
+                </tbody>		
+            </table>
+   </center>
+
+  <!-- Share this article -->		
+			
+			
+			
+			
+			
+			
+		</div><!--
+	</div>-->
+	
+	
+	<!-- end author pages -->
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="footer-category">
+				<h3>The Company</h3>
+				<div class="row">
+					<div class="col s4">
+						<ul>
+							<li><a href="../author-page.html">About Us</a></li>
+							<li><a href="article-2.html">Press</a></li>
+							<li><a href="../author-page.html#">Meet Our People</a></li>
+							<li><a href="../pricing-table.html">Affiliate Programs</a></li>
+							<li><a href="../cookies.html">About Ads</a></li>
+							<li><a href="../blog/article-mini.html">Information About Cookies</a></li>
+						</ul>
+					</div>
+					<div class="col s4">
+						<ul>
+						<li><a href="../faq.html">Help & FAQs</a></li>
+						<li><a href="../contact.html">Contact Us</a></li>
+						<li><a href="../sitemap_index.html">Site Map</a></li>
+						<li><a href="../blogtrend.html">Review</a></li>
+						<li><a href="../blog/featured-post.html#">How Tos</a></li>
+
+						</ul>
+					</div>
+					<div class="col s4">
+						<ul>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-text">
+				<ul>
+					<li><a href="../privacy-policy.html">Privacy Policy </a></li>
+					 <li><a href="../terms.html">Terms of Use </a></li>
+					  <li><a href="../disclosure.html">Disclaimer </a></li>
+					   <li><a href="../contact.html">Contact Us </a></li>
+
+				</ul>
+			</div>
+			<ul>
+				<li><a href="https://www.facebook.com/imailchecks2" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/imailchecks" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://twitter.com/imailchecks" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/imailchecks" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://pinterest.com/imailchecks/" target="_blank" rel="noopener noreferrer"><i class="fa fa-pinterest"></i></a></li>
+				<li><a href="https://www.youtube.com/imailchecks/" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a></li>
+				<!-- <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer"><i class="fa fa-google"></i></a></li>
+			--></ul>
+			<p>Copyright © BeYouBeReal.org • All Right Reserved</p>
+			
+			<!-- footer disclaimer -->
+			
+
+			
+			
+			
+		</div>
+	</footer>
+	<!-- end footer -->
+
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/materialize.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/main.js"></script>
+
+</body>
+</html>
